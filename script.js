@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       licenseKey: 'non-commercial-and-evaluation',
       stretchH: 'all',
-      height: 'auto',
-      width: '100%',
+      height: '100%', // Ensures the table fills the container's height
+      width: '100%', // Ensures the table fills the container's width
       contextMenu: true,
       manualColumnResize: true,
       manualRowResize: true,
@@ -179,4 +179,5 @@ document.addEventListener('DOMContentLoaded', function () {
     suggestionsContainer.style.left = rect.left + 'px';
     suggestionsContainer.style.display = 'block';
   }
+
 });
