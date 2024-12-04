@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spreadsheet with Extended Functions and Suggestions</title>
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/handsontable/11.2.0/handsontable.full.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickr/1.8.0/themes/classic.min.css">
+
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="spreadsheet-container">
+    <div class="top-bar">
+      <button id="boldBtn"><b>B</b></button>
+      <button id="italicBtn"><i>I</i></button>
+      <button id="underlineBtn"><u>U</u></button>
+    </div>
+
+    <div id="spreadsheet"></div>
+    <div class="suggestions" id="suggestions" style="display: none;"></div>
+  </div>
+
+  <div class="bottom-bar" id="bottomBar">
+    <button id="newSpreadsheetBtn">+</button>
+    <div class="tabs" id="tabs"></div>
+  </div>
+
+  <!-- External JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handsontable/11.2.0/handsontable.full.min.js"></script>
+
+  <!-- External JS File -->
+  <script src="scripts.js"></script>
+
+</body>
+</html>
