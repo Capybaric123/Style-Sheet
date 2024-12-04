@@ -7,11 +7,18 @@ body {
 
 .spreadsheet-container {
   width: 100%;
+  height: 90vh; /* Ensure container takes up vertical space */
   max-width: 1200px;
   margin: 0 auto;
-  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+#spreadsheet {
+  flex-grow: 1; /* This allows the Handsontable to fill the available space */
+  border: 1px solid #ddd;
+  height: 100%;
 }
 
 .top-bar {
@@ -68,13 +75,6 @@ body {
   margin-left: 10px;
   font-size: 12px;
   cursor: pointer;
-}
-
-.handsontable {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
 }
 
 .suggestions {
